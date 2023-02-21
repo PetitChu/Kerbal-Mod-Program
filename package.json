@@ -1,0 +1,13 @@
+{
+  "name": "com.brainlesslabs.kmp",
+  "version": "0.0.1",
+  "displayName": "Kerbal Mod Program",
+  "description": "An unofficial toolset to mods Kerbal Space Program.",
+  "unity": "2019.4",
+  "dependencies": {
+  },
+  "author": {
+    "name": "Sebastien Charron",
+    "url": "https://github.com/PetitChu"
+  }
+}
