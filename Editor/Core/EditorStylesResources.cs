@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace BrainlessLabs.KMP.Editor.Internal
+namespace BrainlessLabs.KMP.Editor.Core
 {
     #if KMP_INTERNAL
     [CreateAssetMenu(menuName = "KMP Internal/Editor Styles Resources")]

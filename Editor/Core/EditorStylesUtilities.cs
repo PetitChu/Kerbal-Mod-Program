@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace BrainlessLabs.KMP.Editor.Internal
+namespace BrainlessLabs.KMP.Editor.Core
 {
     public static class EditorStylesUtilities
     {
