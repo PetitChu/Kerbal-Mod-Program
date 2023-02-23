@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c08bd990b161f24fbf03230752478a8, type: 3}
+  m_Name: KMPStylesResources
+  m_EditorClassIdentifier: 
+  m_Logo: {fileID: 2800000, guid: 98c05d7907f49cf4482e4a9d2383096c, type: 3}
+  m_HeaderFont: {fileID: 12800000, guid: 959ad0aa49be3684ca2ef1975485bc64, type: 3}
+  m_ContentFont: {fileID: 12800000, guid: ac6a81beecaac0642b61195beefad275, type: 3}
+  m_NoteFont: {fileID: 12800000, guid: 67d9eb8d64bed6d4a8e8b7589a534e56, type: 3}
+  m_ButtonFont: {fileID: 12800000, guid: 3518bd0f5778c9d45b237698ac428d51, type: 3}
+  m_CheckIcon: {fileID: 2800000, guid: c32f8836e838c044681f6dc6db926d23, type: 3}
+  m_XIcon: {fileID: 2800000, guid: 8cab03488d6c1154dad1ab3f6eb7b410, type: 3}
+  m_PlusIcon: {fileID: 2800000, guid: 324d0cbd47979854c93bd7f70f85c58b, type: 3}
+  m_MinusIcon: {fileID: 2800000, guid: c70ab966d47a15a4e852dc6a49fdb0a3, type: 3}
+  m_EditIcon: {fileID: 2800000, guid: 6908799d51a9893479c2ec520a759a25, type: 3}
+  m_InfoIcon: {fileID: 2800000, guid: 7e28277946c8460418e832441c4cc464, type: 3}
+  m_LeftIcon: {fileID: 2800000, guid: 65cc05d7cc3898d4fbd653b08de8818f, type: 3}
+  m_RightIcon: {fileID: 2800000, guid: 34529774cee04aa4381f4c8f0defe4a3, type: 3}
+  m_UpIcon: {fileID: 2800000, guid: 1da6673374df78042b202c7ee4b7e93b, type: 3}
+  m_DownIcon: {fileID: 2800000, guid: 2dfbd900e6cf65a4fb10057a7d7df7e1, type: 3}
+  m_HeaderTexture: {fileID: 2800000, guid: 36e502e6f7417d84182951995678c62d, type: 3}
+  m_BodyTexture: {fileID: 2800000, guid: f838f65dcd55a774096b081b2fc5822f, type: 3}
+  m_FooterTexture: {fileID: 2800000, guid: 58d4364cbe55adf48a621b873cd807ea, type: 3}
+  m_TabHeaderTexture: {fileID: 2800000, guid: 49b870b15495b5f49baff2c9f784f6d0, type: 3}
+  m_TabBodyTexture: {fileID: 2800000, guid: 682b019ba52fd404b99fd4d47da11183, type: 3}
+  m_TabFooterTexture: {fileID: 2800000, guid: 821ff1e52a85e0c49b445eb1ab71d586, type: 3}
+  m_TabButtonNormalTexture: {fileID: 2800000, guid: 1a4ccd8ee6895b04db121dc7b8fc0a78,
+    type: 3}
+  m_TabButtonActiveTexture: {fileID: 2800000, guid: 21ca1e86d0d6f304cb92e5c56bb9bd5d,
+    type: 3}
+  m_TabButtonClickTexture: {fileID: 2800000, guid: 5c23734eb57b22f4783423633752f8d0,
+    type: 3}
+  m_FrameTexture: {fileID: 2800000, guid: 98c4e10159372004bae1d9f83ea8cf36, type: 3}
+  m_BoxTexture: {fileID: 2800000, guid: 9bcb36c3a68557d4fbed0a91dee5fcb9, type: 3}
+  m_HelpBoxTexture: {fileID: 2800000, guid: 8667dd882489b3841bdd17efe9970839, type: 3}
+  m_ScrollViewTexture: {fileID: 2800000, guid: 64085a53ef8755645a2c7bee4d40dc18, type: 3}
+  m_ScrollThumbTexture: {fileID: 2800000, guid: b39fee854626dce4f9dab0b8771912b4,
+    type: 3}
+  m_FieldTexture: {fileID: 2800000, guid: 60aa53b3c359486448224246485302c1, type: 3}
+  m_ButtonTexture: {fileID: 2800000, guid: c3e5507171e4fab49b62a650891f625c, type: 3}
+  m_ButtonDarkTexture: {fileID: 2800000, guid: f7d3a32985d56f54bac584cf78addae8, type: 3}
+  m_ButtonRoundTexture: {fileID: 2800000, guid: 50cb9af5455248b45b7a2c8270357b9b,
+    type: 3}
+  m_ButtonRoundDarkTexture: {fileID: 2800000, guid: bafc98e467aebd640a58fb55ae677ce4,
+    type: 3}
+  m_SignOctagonal: {fileID: 2800000, guid: e59e493557e8ecb41ad2315af4db7dad, type: 3}
+  m_SignTriangle: {fileID: 2800000, guid: 8ef7ec2bdb658de4fa051c6168270cee, type: 3}
+  m_HeaderFontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_ContentFontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_NoteFontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_ButtonFontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_SeparatorColor: {r: 1, g: 1, b: 1, a: 1}
