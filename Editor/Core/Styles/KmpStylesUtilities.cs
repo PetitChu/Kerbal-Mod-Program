@@ -1,110 +1,116 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace BrainlessLabs.KMP.Editor.Core
+namespace KMP.Editor.Core.Styles
 {
-    public static class EditorStylesUtilities
+    static class KmpStylesUtilities
     {
-        const string k_EditorStylesResourcesPath = "Packages/com.brainlesslabs.kmp/Editor/Internal/EditorStylesResources.asset";
+        const string k_EditorStylesResourcesPath = "Packages/com.brainlesslabs.kmp/Editor/Internal/KMPStylesResources.asset";
         
-        static EditorStylesResources s_EditorStylesResources = GetEditorStylesResources();
+        static KmpStylesResources s_KmpStylesResources = GetEditorStylesResources();
 
-        internal static Texture2D Logo => s_EditorStylesResources != null ? s_EditorStylesResources.logo : null;
+        internal static Texture2D Logo => s_KmpStylesResources != null ? s_KmpStylesResources.logo : null;
         
-        internal static Font HeaderFont => s_EditorStylesResources != null ? s_EditorStylesResources.headerFont : UnityEditor.EditorStyles.boldFont;
+        internal static Font HeaderFont => s_KmpStylesResources != null ? s_KmpStylesResources.headerFont : UnityEditor.EditorStyles.boldFont;
 
-        internal static Font ContentFont => s_EditorStylesResources != null ? s_EditorStylesResources.contentFont : UnityEditor.EditorStyles.standardFont;
+        internal static Font ContentFont => s_KmpStylesResources != null ? s_KmpStylesResources.contentFont : UnityEditor.EditorStyles.standardFont;
 
-        internal static Font NoteFont => s_EditorStylesResources != null ? s_EditorStylesResources.noteFont : UnityEditor.EditorStyles.miniFont;
+        internal static Font NoteFont => s_KmpStylesResources != null ? s_KmpStylesResources.noteFont : UnityEditor.EditorStyles.miniFont;
         
-        internal static Font ButtonFont => s_EditorStylesResources != null ? s_EditorStylesResources.buttonFont : UnityEditor.EditorStyles.miniBoldFont;
+        internal static Font ButtonFont => s_KmpStylesResources != null ? s_KmpStylesResources.buttonFont : UnityEditor.EditorStyles.miniBoldFont;
 
-        internal static Texture2D CheckIcon => s_EditorStylesResources != null ? s_EditorStylesResources.checkIcon : null;
+        internal static Texture2D CheckIcon => s_KmpStylesResources != null ? s_KmpStylesResources.checkIcon : null;
 
-        internal static Texture2D XIcon => s_EditorStylesResources != null ? s_EditorStylesResources.xIcon : null;
+        internal static Texture2D XIcon => s_KmpStylesResources != null ? s_KmpStylesResources.xIcon : null;
 
-        internal static Texture2D PlusIcon => s_EditorStylesResources != null ? s_EditorStylesResources.plusIcon : null;
+        internal static Texture2D PlusIcon => s_KmpStylesResources != null ? s_KmpStylesResources.plusIcon : null;
 
-        internal static Texture2D MinusIcon => s_EditorStylesResources != null ? s_EditorStylesResources.minusIcon : null;
+        internal static Texture2D MinusIcon => s_KmpStylesResources != null ? s_KmpStylesResources.minusIcon : null;
 
-        internal static Texture2D EditIcon => s_EditorStylesResources != null ? s_EditorStylesResources.editIcon : null;
+        internal static Texture2D EditIcon => s_KmpStylesResources != null ? s_KmpStylesResources.editIcon : null;
 
-        internal static Texture2D InfoIcon => s_EditorStylesResources != null ? s_EditorStylesResources.infoIcon : null;
+        internal static Texture2D InfoIcon => s_KmpStylesResources != null ? s_KmpStylesResources.infoIcon : null;
 
-        internal static Texture2D LeftIcon => s_EditorStylesResources != null ? s_EditorStylesResources.leftIcon : null;
+        internal static Texture2D LeftIcon => s_KmpStylesResources != null ? s_KmpStylesResources.leftIcon : null;
 
-        internal static Texture2D RightIcon => s_EditorStylesResources != null ? s_EditorStylesResources.rightIcon : null;
+        internal static Texture2D RightIcon => s_KmpStylesResources != null ? s_KmpStylesResources.rightIcon : null;
 
-        internal static Texture2D UpIcon => s_EditorStylesResources != null ? s_EditorStylesResources.upIcon : null;
+        internal static Texture2D UpIcon => s_KmpStylesResources != null ? s_KmpStylesResources.upIcon : null;
 
-        internal static Texture2D DownIcon => s_EditorStylesResources != null ? s_EditorStylesResources.downIcon : null;
+        internal static Texture2D DownIcon => s_KmpStylesResources != null ? s_KmpStylesResources.downIcon : null;
         
-        internal static Texture2D HeaderTexture => s_EditorStylesResources != null ? s_EditorStylesResources.headerTexture : null;
+        internal static Texture2D HeaderTexture => s_KmpStylesResources != null ? s_KmpStylesResources.headerTexture : null;
         
-        internal static Texture2D BodyTexture => s_EditorStylesResources != null ? s_EditorStylesResources.bodyTexture : null;
+        internal static Texture2D BodyTexture => s_KmpStylesResources != null ? s_KmpStylesResources.bodyTexture : null;
         
-        internal static Texture2D FooterTexture => s_EditorStylesResources != null ? s_EditorStylesResources.footerTexture : null;
+        internal static Texture2D FooterTexture => s_KmpStylesResources != null ? s_KmpStylesResources.footerTexture : null;
 
-        internal static Texture2D TabHeaderTexture => s_EditorStylesResources != null ? s_EditorStylesResources.tabHeaderTexture : null;
+        internal static Texture2D TabHeaderTexture => s_KmpStylesResources != null ? s_KmpStylesResources.tabHeaderTexture : null;
         
-        internal static Texture2D TabBodyTexture => s_EditorStylesResources != null ? s_EditorStylesResources.tabBodyTexture : null;
+        internal static Texture2D TabBodyTexture => s_KmpStylesResources != null ? s_KmpStylesResources.tabBodyTexture : null;
         
-        internal static Texture2D TabFooterTexture => s_EditorStylesResources != null ? s_EditorStylesResources.tabFooterTexture : null;
+        internal static Texture2D TabFooterTexture => s_KmpStylesResources != null ? s_KmpStylesResources.tabFooterTexture : null;
 
-        internal static Texture2D TabButtonNormalTexture => s_EditorStylesResources != null ? s_EditorStylesResources.tabButtonNormalTexture : null;
+        internal static Texture2D TabButtonNormalTexture => s_KmpStylesResources != null ? s_KmpStylesResources.tabButtonNormalTexture : null;
         
-        internal static Texture2D TabButtonActiveTexture => s_EditorStylesResources != null ? s_EditorStylesResources.tabButtonActiveTexture : null;
+        internal static Texture2D TabButtonActiveTexture => s_KmpStylesResources != null ? s_KmpStylesResources.tabButtonActiveTexture : null;
         
-        internal static Texture2D TabButtonClickTexture => s_EditorStylesResources != null ? s_EditorStylesResources.tabButtonClickTexture : null;
+        internal static Texture2D TabButtonClickTexture => s_KmpStylesResources != null ? s_KmpStylesResources.tabButtonClickTexture : null;
 
-        internal static Texture2D FrameTexture => s_EditorStylesResources != null ? s_EditorStylesResources.frameTexture : null;
+        internal static Texture2D FrameTexture => s_KmpStylesResources != null ? s_KmpStylesResources.frameTexture : null;
         
-        internal static Texture2D BoxTexture => s_EditorStylesResources != null ? s_EditorStylesResources.boxTexture : null;
+        internal static Texture2D BoxTexture => s_KmpStylesResources != null ? s_KmpStylesResources.boxTexture : null;
         
-        internal static Texture2D HelpBoxTexture => s_EditorStylesResources != null ? s_EditorStylesResources.helpBoxTexture : null;
+        internal static Texture2D HelpBoxTexture => s_KmpStylesResources != null ? s_KmpStylesResources.helpBoxTexture : null;
         
-        internal static Texture2D ScrollViewTexture => s_EditorStylesResources != null ? s_EditorStylesResources.scrollViewTexture : null;
+        internal static Texture2D ScrollViewTexture => s_KmpStylesResources != null ? s_KmpStylesResources.scrollViewTexture : null;
         
-        internal static Texture2D ScrollThumbTexture => s_EditorStylesResources != null ? s_EditorStylesResources.scrollThumbTexture : null;
+        internal static Texture2D ScrollThumbTexture => s_KmpStylesResources != null ? s_KmpStylesResources.scrollThumbTexture : null;
         
-        internal static Texture2D FieldTexture => s_EditorStylesResources != null ? s_EditorStylesResources.fieldTexture : null;
+        internal static Texture2D FieldTexture => s_KmpStylesResources != null ? s_KmpStylesResources.fieldTexture : null;
 
-        internal static Texture2D ButtonTexture => s_EditorStylesResources != null ? s_EditorStylesResources.buttonTexture : null;
+        internal static Texture2D ButtonTexture => s_KmpStylesResources != null ? s_KmpStylesResources.buttonTexture : null;
         
-        internal static Texture2D ButtonDarkTexture => s_EditorStylesResources != null ? s_EditorStylesResources.buttonDarkTexture : null;
+        internal static Texture2D ButtonDarkTexture => s_KmpStylesResources != null ? s_KmpStylesResources.buttonDarkTexture : null;
         
-        internal static Texture2D ButtonRoundTexture => s_EditorStylesResources != null ? s_EditorStylesResources.buttonRoundTexture : null;
+        internal static Texture2D ButtonRoundTexture => s_KmpStylesResources != null ? s_KmpStylesResources.buttonRoundTexture : null;
         
-        internal static Texture2D ButtonRoundDarkTexture => s_EditorStylesResources != null ? s_EditorStylesResources.buttonRoundDarkTexture : null;
+        internal static Texture2D ButtonRoundDarkTexture => s_KmpStylesResources != null ? s_KmpStylesResources.buttonRoundDarkTexture : null;
 
-        internal static Texture2D SignOctagonal => s_EditorStylesResources != null ? s_EditorStylesResources.signOctagonal : null;
+        internal static Texture2D SignOctagonal => s_KmpStylesResources != null ? s_KmpStylesResources.signOctagonal : null;
         
-        internal static Texture2D SignTriangle => s_EditorStylesResources != null ? s_EditorStylesResources.signTriangle : null;
+        internal static Texture2D SignTriangle => s_KmpStylesResources != null ? s_KmpStylesResources.signTriangle : null;
 
-        internal static Color OrangeColor => s_EditorStylesResources != null ? s_EditorStylesResources.orangeColor : Color.yellow;
+        internal static Color HeaderFontColor => s_KmpStylesResources != null ? s_KmpStylesResources.headerFontColor : Color.white;
         
-        internal static Color BlueColor => s_EditorStylesResources != null ? s_EditorStylesResources.blueColor : Color.blue;
+        internal static Color ContentFontColor => s_KmpStylesResources != null ? s_KmpStylesResources.contentFontColor : Color.white;
         
-        internal static Color RedColor => s_EditorStylesResources != null ? s_EditorStylesResources.redColor : Color.red;
+        internal static Color NoteFontColor => s_KmpStylesResources != null ? s_KmpStylesResources.noteFontColor : Color.white;
         
-        internal static Color GreenColor => s_EditorStylesResources != null ? s_EditorStylesResources.greenColor : Color.green;
+        internal static Color ButtonFontColor => s_KmpStylesResources != null ? s_KmpStylesResources.buttonFontColor : Color.white;
         
-        internal static Color YellowColor => s_EditorStylesResources != null ? s_EditorStylesResources.yellowColor : Color.yellow;
+        internal static Color AlwaysBlackFontColor => s_KmpStylesResources != null ? s_KmpStylesResources.alwaysBlackFontColor : Color.black;
         
-        internal static Color GreyColor => s_EditorStylesResources != null ? s_EditorStylesResources.greyColor : Color.grey;
+        internal static Color SeparatorColor => s_KmpStylesResources != null ? s_KmpStylesResources.separatorColor : Color.white;
         
-        internal static Color DarkGreyColor => s_EditorStylesResources != null ? s_EditorStylesResources.darkGreyColor : Color.grey;
+        internal static Color ToggleOnActiveColor => s_KmpStylesResources != null ? s_KmpStylesResources.toggleOnActiveColor : Color.green;
         
-        internal static Color WhiteColor => s_EditorStylesResources != null ? s_EditorStylesResources.whiteColor : Color.white;
+        internal static Color ToggleOffActiveColor => s_KmpStylesResources != null ? s_KmpStylesResources.toggleOffActiveColor : Color.red;
         
-        internal static Color BlackColor => s_EditorStylesResources != null ? s_EditorStylesResources.blackColor : Color.black;
+        internal static Color ToggleInactiveColor => s_KmpStylesResources != null ? s_KmpStylesResources.toggleInactiveColor : Color.grey;
         
-        internal static EditorStylesResources GetEditorStylesResources()
+        internal static Color HelpBoxColor => s_KmpStylesResources != null ? s_KmpStylesResources.helpBoxColor : Color.red;
+        
+        internal static Color WarningColor => s_KmpStylesResources != null ? s_KmpStylesResources.warningColor : Color.yellow;
+        
+        internal static Color WarningButtonColor => s_KmpStylesResources != null ? s_KmpStylesResources.warningButtonColor : Color.grey;
+        
+        internal static KmpStylesResources GetEditorStylesResources()
         {
-            var editorStylesResources = (EditorStylesResources) AssetDatabase.LoadAssetAtPath(k_EditorStylesResourcesPath, typeof(EditorStylesResources));
+            var editorStylesResources = (KmpStylesResources) AssetDatabase.LoadAssetAtPath(k_EditorStylesResourcesPath, typeof(KmpStylesResources));
             if (editorStylesResources == null)
             {
-                Debug.LogWarning($"{nameof(EditorStylesResources)} was not found at path: {k_EditorStylesResourcesPath}");
+                Debug.LogWarning($"{nameof(KmpStylesResources)} was not found at path: {k_EditorStylesResourcesPath}");
             }
 
             return editorStylesResources;
@@ -120,7 +126,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             headerLabelStyle.alignment = TextAnchor.LowerLeft;
             headerLabelStyle.fontStyle = FontStyle.Normal;
             headerLabelStyle.padding = new RectOffset(4, 4, 4, 4);
-            headerLabelStyle.normal.textColor = BlueColor;
+            headerLabelStyle.normal.textColor = HeaderFontColor;
 
             return headerLabelStyle;
         }
@@ -135,7 +141,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             signatureLabelStyle.alignment = TextAnchor.LowerLeft;
             signatureLabelStyle.fontStyle = FontStyle.Normal;
             signatureLabelStyle.padding = new RectOffset(8, 4, 4, 4);
-            signatureLabelStyle.normal.textColor = BlueColor;
+            signatureLabelStyle.normal.textColor = HeaderFontColor;
 
             return signatureLabelStyle;
         }
@@ -150,7 +156,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             titleLabelStyle.alignment = TextAnchor.LowerLeft;
             titleLabelStyle.fontStyle = FontStyle.Italic;
             titleLabelStyle.padding = new RectOffset(6, 4, 4, 4);
-            titleLabelStyle.normal.textColor = BlueColor;
+            titleLabelStyle.normal.textColor = ContentFontColor;
 
             return titleLabelStyle;
         }
@@ -165,7 +171,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             subtitleLabelStyle.alignment = TextAnchor.LowerLeft;
             subtitleLabelStyle.fontStyle = FontStyle.Italic;
             subtitleLabelStyle.padding = new RectOffset(6, 4, 4, 4);
-            subtitleLabelStyle.normal.textColor = BlueColor;
+            subtitleLabelStyle.normal.textColor = ContentFontColor;
 
             return subtitleLabelStyle;
         }
@@ -180,7 +186,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             contentLargeLabelStyle.alignment = TextAnchor.MiddleLeft;
             contentLargeLabelStyle.fontStyle = FontStyle.BoldAndItalic;
             contentLargeLabelStyle.padding = new RectOffset(10, 10, 4, 4);
-            contentLargeLabelStyle.normal.textColor = WhiteColor;
+            contentLargeLabelStyle.normal.textColor = ContentFontColor;
 
             return contentLargeLabelStyle;
         }
@@ -196,7 +202,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             contentNormalLabelStyle.alignment = TextAnchor.MiddleLeft;
             contentNormalLabelStyle.fontStyle = FontStyle.Normal;
             contentNormalLabelStyle.padding = new RectOffset(10, 10, 4, 4);
-            contentNormalLabelStyle.normal.textColor = WhiteColor;
+            contentNormalLabelStyle.normal.textColor = ContentFontColor;
 
             return contentNormalLabelStyle;
         }
@@ -211,7 +217,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             contentSmallLabelStyle.alignment = TextAnchor.MiddleLeft;
             contentSmallLabelStyle.fontStyle = FontStyle.Bold;
             contentSmallLabelStyle.padding = new RectOffset(10, 10, 4, 4);
-            contentSmallLabelStyle.normal.textColor = WhiteColor;
+            contentSmallLabelStyle.normal.textColor = ContentFontColor;
 
             return contentSmallLabelStyle;
         }
@@ -226,7 +232,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             noteLabelStyle.font = NoteFont;
             noteLabelStyle.alignment = TextAnchor.LowerLeft;
             noteLabelStyle.fontStyle = FontStyle.Normal;
-            noteLabelStyle.normal.textColor = GreyColor;
+            noteLabelStyle.normal.textColor = NoteFontColor;
 
             return noteLabelStyle;
         }
@@ -241,7 +247,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             buttonNormalLabelStyle.alignment = TextAnchor.MiddleCenter;
             buttonNormalLabelStyle.fontStyle = FontStyle.Normal;
             buttonNormalLabelStyle.padding = new RectOffset(0, 0, 3, 0);
-            buttonNormalLabelStyle.normal.textColor = WhiteColor;
+            buttonNormalLabelStyle.normal.textColor = ButtonFontColor;
 
             return buttonNormalLabelStyle;
         }
@@ -256,7 +262,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             buttonSmallLabelStyle.alignment = TextAnchor.MiddleCenter;
             buttonSmallLabelStyle.fontStyle = FontStyle.Normal;
             buttonSmallLabelStyle.padding = new RectOffset(0, 0, 2, 0);
-            buttonSmallLabelStyle.normal.textColor = WhiteColor;
+            buttonSmallLabelStyle.normal.textColor = ButtonFontColor;
 
             return buttonSmallLabelStyle;
         }
@@ -303,7 +309,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             editorButtonStyle.fontSize = 15;
             editorButtonStyle.font = ContentFont;
             editorButtonStyle.fontStyle = FontStyle.Bold;
-            editorButtonStyle.normal.textColor = WhiteColor;
+            editorButtonStyle.normal.textColor = ButtonFontColor;
 
             return editorButtonStyle;
         }
@@ -320,7 +326,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             editorSmallButtonStyle.fontSize = 12;
             editorSmallButtonStyle.font = ContentFont;
             editorSmallButtonStyle.fontStyle = FontStyle.Bold;
-            editorSmallButtonStyle.normal.textColor = WhiteColor;
+            editorSmallButtonStyle.normal.textColor = ButtonFontColor;
 
             return editorSmallButtonStyle;
         }
@@ -340,7 +346,7 @@ namespace BrainlessLabs.KMP.Editor.Core
             editorRoundButtonStyle.fontSize = 8;
             editorRoundButtonStyle.font = ContentFont;
             editorRoundButtonStyle.fontStyle = FontStyle.Bold;
-            editorRoundButtonStyle.normal.textColor = WhiteColor;
+            editorRoundButtonStyle.normal.textColor = ButtonFontColor;
 
             return editorRoundButtonStyle;
         }
@@ -379,9 +385,9 @@ namespace BrainlessLabs.KMP.Editor.Core
             editorDropMenuStyle.normal.background = BoxTexture;
             editorDropMenuStyle.focused.background = BoxTexture;
             editorDropMenuStyle.active.background = BoxTexture;
-            editorDropMenuStyle.normal.textColor = WhiteColor;
-            editorDropMenuStyle.focused.textColor = WhiteColor;
-            editorDropMenuStyle.active.textColor = WhiteColor;
+            editorDropMenuStyle.normal.textColor = ContentFontColor;
+            editorDropMenuStyle.focused.textColor = ContentFontColor;
+            editorDropMenuStyle.active.textColor = ContentFontColor;
             editorDropMenuStyle.fixedHeight = 24f;
             editorDropMenuStyle.border = new RectOffset(4, 4, 4, 4);
             editorDropMenuStyle.margin = new RectOffset(0, 0, 0, 0);
@@ -501,8 +507,8 @@ namespace BrainlessLabs.KMP.Editor.Core
             editorTabButtonStyle.alignment = TextAnchor.MiddleRight;
             editorTabButtonStyle.font = ContentFont;
             editorTabButtonStyle.fontSize = 14;
-            editorTabButtonStyle.normal.textColor = WhiteColor;
-            editorTabButtonStyle.active.textColor = WhiteColor;
+            editorTabButtonStyle.normal.textColor = ContentFontColor;
+            editorTabButtonStyle.active.textColor = ContentFontColor;
             editorTabButtonStyle.fontStyle = FontStyle.Normal;
 
             return editorTabButtonStyle;
@@ -519,29 +525,29 @@ namespace BrainlessLabs.KMP.Editor.Core
             editorTabActiveButtonStyle.alignment = TextAnchor.MiddleRight;
             editorTabActiveButtonStyle.font = ContentFont;
             editorTabActiveButtonStyle.fontSize = 14;
-            editorTabActiveButtonStyle.normal.textColor = WhiteColor;
-            editorTabActiveButtonStyle.active.textColor = WhiteColor;
+            editorTabActiveButtonStyle.normal.textColor = ContentFontColor;
+            editorTabActiveButtonStyle.active.textColor = ContentFontColor;
             editorTabActiveButtonStyle.fontStyle = FontStyle.Bold;
 
             return editorTabActiveButtonStyle;
         }
 
-        public static GUIStyle CreateNumberField()
+        public static GUIStyle CreateBoxFieldStyle()
         {
-            var editorNumberField = new GUIStyle(UnityEditor.EditorStyles.numberField);
-            editorNumberField.normal.background = FieldTexture;
-            editorNumberField.active.background = FieldTexture;
-            editorNumberField.focused.background = FieldTexture;
-            editorNumberField.hover.background = FieldTexture;
-            editorNumberField.fixedHeight = 28f;
-            editorNumberField.margin = new RectOffset(0, 0, 0, 0);
-            editorNumberField.padding = new RectOffset(6, 6, 2, 2);
-            editorNumberField.border = new RectOffset(4, 4, 4, 4);
-            editorNumberField.font = ContentFont;
-            editorNumberField.fontSize = 14;
-            editorNumberField.alignment = TextAnchor.MiddleLeft;
+            var boxFieldStyle = new GUIStyle(UnityEditor.EditorStyles.numberField);
+            boxFieldStyle.normal.background = FieldTexture;
+            boxFieldStyle.active.background = FieldTexture;
+            boxFieldStyle.focused.background = FieldTexture;
+            boxFieldStyle.hover.background = FieldTexture;
+            boxFieldStyle.fixedHeight = 28f;
+            boxFieldStyle.margin = new RectOffset(0, 0, 0, 0);
+            boxFieldStyle.padding = new RectOffset(6, 6, 2, 2);
+            boxFieldStyle.border = new RectOffset(4, 4, 4, 4);
+            boxFieldStyle.font = ContentFont;
+            boxFieldStyle.fontSize = 14;
+            boxFieldStyle.alignment = TextAnchor.MiddleLeft;
 
-            return editorNumberField;
+            return boxFieldStyle;
         }
 
         public static GUIStyle CreateHorizontalScrollBarStyle()

@@ -3,18 +3,20 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace BrainlessLabs.KMP.Editor.Core
+namespace KMP.Editor.Core.Windows
 {
     abstract class KMPEditorWindow : EditorWindow
     {
         protected const int k_ConfigureMenuPriority = 100;
-        
+
         protected abstract string WindowTitle { get; }
 
         protected abstract float WindowMinimumWidth { get; }
 
         protected abstract float WindowMinimumHeight { get; }
         
+        internal abstract bool IsLocked { get; set; }
+
         protected KMPEditorWindow()
         {
             EditorListener.OnReset -= Reset;
@@ -36,6 +38,7 @@ namespace BrainlessLabs.KMP.Editor.Core
                 {
                     desiredDockNextTo = new Type[] {};
                 }
+                
                 kmpEditorWindow = GetWindow<T>(desiredDockNextTo);
                 kmpEditorWindow.minSize = new Vector2(kmpEditorWindow.WindowMinimumWidth, kmpEditorWindow.WindowMinimumHeight);
                 kmpEditorWindow.name = kmpEditorWindow.WindowTitle;

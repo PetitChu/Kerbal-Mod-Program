@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace BrainlessLabs.KMP.Editor.Core
+namespace KMP.Editor.Core.Styles
 {
     #if KMP_INTERNAL
-    [CreateAssetMenu(menuName = "KMP Internal/Editor Styles Resources")]
+    [CreateAssetMenu(menuName = "KMP Internal/Kmp Styles Resources Asset")]
     #endif
-    public class EditorStylesResources : ScriptableObject
+    public class KmpStylesResources : ScriptableObject
     {
         public Texture2D logo => m_Logo;
 
@@ -79,24 +80,30 @@ namespace BrainlessLabs.KMP.Editor.Core
 
         public Texture2D signTriangle => m_SignTriangle;
 
-        public Color orangeColor => m_OrangeColor;
+        public Color headerFontColor => m_HeaderFontColor;
 
-        public Color blueColor => m_BlueColor;
+        public Color contentFontColor => m_ContentFontColor;
 
-        public Color redColor => m_RedColor;
+        public Color noteFontColor => m_NoteFontColor;
 
-        public Color greenColor => m_GreenColor;
+        public Color buttonFontColor => m_ButtonFontColor;
 
-        public Color yellowColor => m_YellowColor;
+        public Color alwaysBlackFontColor => m_AlwaysBlackFontColor;
 
-        public Color greyColor => m_GreyColor;
+        public Color separatorColor => m_SeparatorColor;
 
-        public Color darkGreyColor => m_DarkGreyColor;
+        public Color toggleOnActiveColor => m_ToggleOnActiveColor;
 
-        public Color whiteColor => m_WhiteColor;
+        public Color toggleOffActiveColor => m_ToggleOffActiveColor;
 
-        public Color blackColor => m_BlackColor;
-        
+        public Color toggleInactiveColor => m_ToggleInactiveColor;
+
+        public Color helpBoxColor => m_HelpBoxColor;
+
+        public Color warningColor => m_WarningColor;
+
+        public Color warningButtonColor => m_WarningButtonColor;
+
         [Header("Logo")]
         [SerializeField]
         Texture2D m_Logo;
@@ -209,32 +216,41 @@ namespace BrainlessLabs.KMP.Editor.Core
         [SerializeField]
         Texture2D m_SignTriangle;
 
-        [Header("Editor Colors")]
+        [Header("Colors Palette")]
         [SerializeField]
-        Color m_OrangeColor;
+        Color m_HeaderFontColor;
 
         [SerializeField]
-        Color m_BlueColor;
+        Color m_ContentFontColor;
 
         [SerializeField]
-        Color m_RedColor;
+        Color m_NoteFontColor;
 
         [SerializeField]
-        Color m_GreenColor;
+        Color m_ButtonFontColor;
 
         [SerializeField]
-        Color m_YellowColor;
+        Color m_AlwaysBlackFontColor;
 
         [SerializeField]
-        Color m_GreyColor;
+        Color m_SeparatorColor;
 
         [SerializeField]
-        Color m_DarkGreyColor;
+        Color m_ToggleOnActiveColor;
 
         [SerializeField]
-        Color m_WhiteColor;
+        Color m_ToggleOffActiveColor;
 
         [SerializeField]
-        Color m_BlackColor;
+        Color m_ToggleInactiveColor;
+
+        [SerializeField]
+        Color m_HelpBoxColor;
+
+        [SerializeField]
+        Color m_WarningColor;
+
+        [SerializeField]
+        Color m_WarningButtonColor;
     }
 }

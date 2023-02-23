@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
-namespace BrainlessLabs.KMP.Editor.Core
+namespace KMP.Editor.Core
 {
     static class EditorListener
     {
